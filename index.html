@@ -25,10 +25,16 @@
     <table class="wrapper">
         <tr>
             <td>
-                <img class="img" src="menu.jpg" alt="menu" />
+                <img id="img-menu" class="img" src="menu.jpg" alt="menu" />
             </td>
         </tr>
       </table>
 </body>
+
+<script>
+    var timestamp = new Date().getTime();     
+    var el = document.getElementById("img-menu");           
+    el.src += "?t=" + timestamp;  
+</script>
 
 </html>
